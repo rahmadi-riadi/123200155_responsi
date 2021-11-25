@@ -32,14 +32,31 @@
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="home.php">Home</a>
+                        <a class="nav-link active" aria-current="page" href="home.php">Beranda</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="output.php">Hasil</a>
+                        <a class="nav-link" href="output.php">Daftar Inventaris</a>
                     </li>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    List per kategori
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">bangunan</a></li>
+                                    <li><a class="dropdown-item" href="#">Kendaraan</a></li>
+                                    <li><a class="dropdown-item" href="#">Alat tulis kantor</a></li>
+                                    <li><a class="dropdown-item" href="#">Elektronik</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
 
                 </ul>
+
+
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-end">
                 <a class="btn btn-primary" href="logout/index.php">Logout</a>
@@ -51,5 +68,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+<nav class="d-flex flex-lg-row flex-column align-items-center justify-content-center fixed-bottom bg-primary">
+    <p style="margin: 0">Copyright © Rahmadi</p>
+</nav>
 
 </html>

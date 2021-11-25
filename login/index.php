@@ -1,9 +1,5 @@
 <?php
-/* 
-    Rebuild by Maulana Rizki from Frendy
-    // Don't Remove Copyright
 
-*/
 session_start();
 require '../include/function.php';
 
@@ -20,7 +16,7 @@ if (isset($_POST['tombol'])) {
     $REMOTE_ADDR = $_SERVER['REMOTE_ADDR'];
     $HTTP_USER_AGENT = $_SERVER['HTTP_USER_AGENT'];
 
-    $q = mysqli_query($konek, "SELECT * FROM user WHERE username = '$username'");
+    $q = mysqli_query($konek, "SELECT * FROM petugas WHERE username = '$username'");
     $queryLogin = mysqli_fetch_assoc($q);
 
     if (empty($username) || empty($password)) {
@@ -37,7 +33,7 @@ if (isset($_POST['tombol'])) {
       alert("gagal", "Username atau Password salah", "login");
     } else if (password_verify($password, $queryLogin['password'])) {
       $_SESSION['username'] = $queryLogin['username'];
-      header("location:../");
+      header("location:../home.php");
       exit();
     } else {
       alert("gagal", "Username atau password salah", "login");

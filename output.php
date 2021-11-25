@@ -7,6 +7,7 @@ include_once("navbar.php");
 
     <h1 class="mt-3 mb-3">HASIL PENDAFTARAN</h1>
     <hr>
+    <a href="form.php" class="btn btn-primary btn-sm">Tambah + </a>
     <table class="table table-striped">
 
         <tr class="table table-dark table-striped">

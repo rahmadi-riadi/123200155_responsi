@@ -3,7 +3,7 @@ include_once("navbar.php");
 
 ?>
 
-<div class="container">
+<div class="container mb-5">
     <h1 class="mt-3 mb-3">FORM PENDAFTARAN</h1>
 
     <form method="POST" action="input.php">

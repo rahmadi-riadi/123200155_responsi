@@ -1,7 +1,7 @@
 <?php
 $konek = mysqli_connect('localhost', 'root', '', 'databasegg');
-$judul = "RESPONSI";
-$link = "RESPONSI";
+$judul = "Nama_Kamu";
+$link = "LINK WEB KAMU";
 
 date_default_timezone_set('Asia/Jakarta');
 $tanggal = date('d M Y');
